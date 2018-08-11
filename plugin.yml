@@ -3,5 +3,8 @@ version: 1.0
 main: de.exodus.fp.main.Main
 
 commands:
+   food:
+      description: Du bekommst ein gutes Essen!
+   
    heilen:
       description: Heilt deine Herzen und Hungerbalken!
