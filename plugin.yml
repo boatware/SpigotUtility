@@ -1,0 +1,7 @@
+name: FirstPlugin
+version: 1.0
+main: de.exodus.fp.main.Main
+
+commands:
+   heilen:
+      description: Heilt deine Herzen und Hungerbalken!
