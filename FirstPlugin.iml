@@ -22,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="JavaSE-10" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="10.0" jdkType="JavaSDK" />
     <orderEntry type="module-library" scope="PROVIDED">
       <library name="spigot.jar">
         <CLASSES>
