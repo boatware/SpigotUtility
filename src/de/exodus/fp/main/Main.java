@@ -6,19 +6,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.exodus.fp.commands.Food;
 import de.exodus.fp.commands.HealCommand;
+import de.exodus.fp.listener.PlayerJoinListener;
 import de.exodus.fp.listener.ScoreboardListener;
 
 public class Main extends JavaPlugin{
 	
 	public void onEnable() {
 		
-		System.out.println("Firstplugin loaded...");
+		System.out.println("SpigotUtility has just loaded");
 		getCommand("heilen").setExecutor(new HealCommand());
 		getCommand("food").setExecutor(new Food());
 		
 		PluginManager pm = Bukkit.getPluginManager();
 		pm.registerEvents(new ScoreboardListener(), this);
-		
+		pm.registerEvents(new PlayerJoinListener(), this);
 	}
 	
 }

@@ -15,7 +15,6 @@ public class ScoreboardListener implements Listener{
 		Player p = e.getPlayer();
 		
 		Scoreboard sb = Bukkit.getScoreboardManager().getNewScoreboard();
-		@SuppressWarnings("deprecation")
 		Objective obj = sb.registerNewObjective("abd", "dd");
 		obj.setDisplaySlot(DisplaySlot.SIDEBAR);
 		obj.setDisplayName("§6-- SERVERNAME --");
