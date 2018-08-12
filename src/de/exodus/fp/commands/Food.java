@@ -12,9 +12,11 @@ public class Food implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String string, String[] args) {
 		Player p = (Player) sender;
-		ItemStack stack = new ItemStack(Material.MELON, 5);
-		p.getInventory().addItem(stack);
-		p.sendMessage("§a Du kannst nun essen!");
+		ItemStack melon = new ItemStack(Material.MELON, 5);
+		ItemStack steak = new ItemStack(Material.COOKED_BEEF, 5);
+		p.getInventory().addItem(melon);
+		p.getInventory().addItem(steak);
+		p.sendMessage("§1§a Du kannst nun essen!");
 		
 		return false;
 	}
